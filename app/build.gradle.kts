@@ -7,6 +7,15 @@ plugins {
     id("kotlin-parcelize")
     id("com.google.dagger.hilt.android")
     id("com.google.devtools.ksp")
+
+    id("kotlin-android")
+    id("com.apollographql.apollo3").version("3.7.3")
+}
+
+apollo {
+    service("service") {
+        packageName.set("com.curiousapps")
+    }
 }
 
 
@@ -87,6 +96,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.manifest)
     coreLibraryDesugaring (libs.android.tools.desugar)
+
+    //Apollo GraphQL
+    implementation(libs.apollo.graph.ql)
 
     // OpenCSV
     implementation (libs.opencsv)

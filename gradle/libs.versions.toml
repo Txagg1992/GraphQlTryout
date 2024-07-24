@@ -1,5 +1,6 @@
 [versions]
 
+apollo-version = "3.7.3"
 ax-core-ktx = "1.12.0"
 ax-life-runtime = "2.7.0"
 ax-activity-compose = "1.8.2"
@@ -47,6 +48,8 @@ google-accompanist-flow = {group = "com.google.accompanist", name = "accompanist
 google-accompanist-swipe = {group = "com.google.accompanist", name = "accompanist-swiperefresh", version.ref = "accompanist-swipe"}
 androidx-lifecycle-runtime-compose-v270 = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle-runtime-compose" }
 androidx-lifecycle-viewmodel-compose-v270 = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle-viewmodel-compose" }
+
+apollo-graph-ql = {group = "com.apollographql.apollo3", name = "apollo-runtime", version.ref = "apollo-version" }
 
 opencsv = {group = "com.opencsv", name = "opencsv", version.ref = "open-csv"}
 
